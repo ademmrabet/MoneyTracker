@@ -1,18 +1,25 @@
 import React from 'react'
-
-function Navbar() {
+import logo from '../assets/logo.png'
+import money from '../assets/money-logo.png'
+import searchDark from '../assets/search-black.png'
+import searchLight from '../assets/search-white.png'
+const Navbar = () => {
   return (
     <div className='navbar'>
-        <ul>
-            <li className='logo'>logo</li>
-            <li>Calculator</li>
-            <li>Wallet</li>
-            <li>Budgets</li>
-            <li>Transactions</li>
-            <li className='login-btn'><button>Login</button></li>
-            <li className='signup-btn'><button>signup</button></li>
-            <li className='profile'>Profile</li>
-        </ul>
+      <img src={money} alt='money logo' className='logo' />
+      <ul>
+        <li>Wallet</li>
+        <li>Spendings</li>
+        <li>Budgets</li>
+        <li>Reports</li>
+      </ul>
+
+      <div className='serch-box'>
+        <input type='text' placeholder='Search'/>
+        <img src={searchDark} alt=''/>
+      </div>
+
+      <img src={logo} alt='' className='toggle-icon'/>
     </div>
   )
 }
