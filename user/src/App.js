@@ -1,16 +1,13 @@
-import LandingPage from './components/LandingPage';
-import Navbar from './components/Navbar';
-import './App.css';
-
+import React from 'react';
+import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
+import Login from './components/Login';
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <LandingPage/>
-    </div>
-  )
-  
+    <MDBContainer fluid>
+      <Login/>
+    </MDBContainer>
+  );
 }
 
 export default App;
